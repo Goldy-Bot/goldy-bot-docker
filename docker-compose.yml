@@ -11,7 +11,7 @@ services:
             - mongodb_data_container:/data/db
 
     goldybot:
-        image: devgoldy/goldybot
+        image: devgoldy/goldybot:latest
         environment:
             DISCORD_TOKEN: "${DISCORD_TOKEN}"
             MONGODB_URL: "mongodb://root:${MONGODB_PASSWORD:-1234}@mongodb:27017/"
